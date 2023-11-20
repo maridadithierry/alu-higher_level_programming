@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-'''An empty class'''
+'''Public instance method: def area(self):'''
 
 
 class BaseGeometry:
     '''Base class'''
-    pass
+
+    def area(self):
+        '''raise an exception for now'''
+        raise Exception("area() is not implemented")
