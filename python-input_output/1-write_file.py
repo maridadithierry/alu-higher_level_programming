@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-'''appends a string at the end of a text file
-(UTF8) and returns the
-number of characters added:
-'''
+'''writes a string to a text file (UTF8) and
+returns the number of characters written'''
 
 
-def append_write(filename="", text=""):
+def write_file(filename="", text=""):
     '''function to write text to a file'''
-    with open(filename, 'a+') as f:
+    with open(filename, 'w+') as f:
         return f.write(text)
