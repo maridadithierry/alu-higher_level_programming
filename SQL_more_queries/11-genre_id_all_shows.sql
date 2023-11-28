@@ -1,5 +1,5 @@
--- get the games genre by id 
-SELECT s.title, g.genre_id
-FROM tv_shows s, tv_show_genres g
-WHERE g.show_id = s.id
-ORDER BY s.title ASC, g.genre_id ASC;
+-- 11-genre_id_all_shows.sql
+SELECT tv_shows.title, tv_show_genres.genre_id
+FROM tv_shows LEFT JOIN tv_show_genres
+ON tv_shows.id = tv_show_genres.show_id
+ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
