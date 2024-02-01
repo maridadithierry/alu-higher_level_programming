@@ -8,3 +8,4 @@ if (args[0] === undefined) {
   for (let i = 0; i < parseInt(args[0]); i++) {
     console.log('C is fun');
   }
+}
